@@ -1,75 +1,63 @@
 
-# A simple representation of a Quantum Ransomware
+# Quantum Ransomware Simulation with Qiskit
 
-The following qiskit experiment presents a conceivable new technique of deploying malware into a Quantum System, using the advantages offered by Single-Qubit and Multi-Qubit operations on Quantum registers. It will examine the possibility of executing a Man-in-the-Endpoint vector using a Quantum Ransomware propagated during a conversation between two peers (Alice and Bob) showing an achievable way for exploiting Bob's endpoint and at the same time avoiding the measurement constraint of a Man-in-the-Middle attack, in which an eavesdropper can potentially collapse the qubit's state before its arrival. For the implementation of the communication schema and the attack scenario, Qiskit in the IBM Quantum Experience will be used to show accurately the feasibility of these techniques in future developments of Quantum Systems; hence from a practical perspective, the creation of a Quantum Security framework is thus becoming, urgent.
+This project presents a conceptual demonstration of **Quantum Ransomware**, leveraging Qiskit's capabilities to simulate how malware could propagate and compromise quantum communication endpoints. The experiment showcases how single-qubit and multi-qubit operations can be used to mimic a *Man-in-the-Endpoint* attack, contrasting it with traditional *Man-in-the-Middle* vectors that risk collapsing qubit states upon measurement.
 
-The main experiment is developed in the following steps (each piece of the code clarifies the points enumerated below):
+This scenario highlights the growing need for robust **Quantum Security Frameworks**, particularly as quantum computing moves closer to practical, real-world deployment.
 
-1) Alice and Bob are being represented to have their particular post-NISQ device, (Alice and Bob registers)
-2) A quantum oracle will be used by Alice to generate a message which will be shared to Bob in clear text.
-3) Eve has already compromised Bob's device, therefore post-exploitation techniques are feasible. Eve's register is going to mimic the Command and Control deploying the malware.
-4) Eve will upload a Quantum Malware to compromise the information Bob is suppose to receive. She will extract it and then encrypt it like a “traditional” Ransomware attack.
+---
 
+## 🔬 Experiment Overview
 
+The simulation follows these main steps:
 
+1. **Alice and Bob Simulation**: Alice and Bob operate with their own post-NISQ quantum devices using quantum registers.
+2. **Message Sharing**: Alice uses a quantum oracle to generate and send a message to Bob in plaintext.
+3. **Endpoint Compromise**: Eve has already compromised Bob’s endpoint, allowing for post-exploitation techniques.
+4. **Quantum Malware Deployment**: Eve simulates a Command and Control (C2) register to inject malicious quantum operations, exfiltrate Bob’s information, and encrypt it—emulating a traditional ransomware attack in quantum form.
 
+---
 
-## Authors
+## 📦 Deployment
 
-- [@fvelazquez](https://www.github.com/fvelazquez-X)
+To run this project locally:
 
+1. **Convert the notebook to a Python script**:
+   ```bash
+   jupyter nbconvert --to script your_notebook.ipynb
+   ```
 
-## Acknowledgements
+2. **Ensure the `.py` file is created** in your working directory.
 
- - [Awesome qiskit learning resources]( https://qiskit.org/learn)
- - [Atacking the quantum internet](https://arxiv.org/abs/2005.04617)
- - [Enterprise tactics. ATT&CK](https://attack.mitre.org/tactics/enterprise/)
+3. **Execute the script** using Python:
+   ```bash
+   python your_notebook.py
+   ```
 
+---
 
-## Deployment
+## 📚 Documentation & Resources
 
-To run this project from a terminal using jupyter notebook:
+- [IBM Quantum Experience](https://quantum-computing.ibm.com/)
+- [Awesome Qiskit Learning Resources](https://qiskit.org/learn)
+- [MITRE ATT&CK Enterprise Tactics](https://attack.mitre.org/tactics/enterprise/)
+- [Attacking the Quantum Internet](https://arxiv.org/abs/2005.04617)
 
-- Firstly, you need to convert the jupyter notebook file which is in the format .ipynb to .py format using the jupyter nbconvert tool.
-```bash
-jupyter nbconvert --to <output format> <input notebook>
-```
+---
 
- Whereas, the <output format> is the desired output format. And the <input notebook> is the jupyter notbook filename.
+## 👥 Authors
 
-- Verify whether .py file is created in your working directory.
+- [@fvelazquez](https://github.com/fvelazquez-X)
 
-- Finally, you could run a jupyter notebook .ipynb file from command prompt using the converted .py file as shown below.
+---
 
-```bash
-   python MyFirstNotebook.py
-```
+## 💬 Feedback
 
-## Documentation
+If you have feedback or suggestions, contact:  
+📧 **jvelazqu@redhat.com**
 
-[IBM Quantum Experience](https://quantum-computing.ibm.com/)
+---
 
+## 📝 License
 
-## Feedback
-
-If you have any feedback, please reach out to us at jvelazqu@redhat.com
-
-
-## 🚀 About Me
-
-- 🔭 I’m an offensive security passionate working at [Red Hat](https://www.redhat.com/en)  
-  
-
--  🔎 I’m currently learning more about [Quantum Technologies](https://quantum-explore.com/en/master/)   
-  
-
-- 📖 I recently wrote a book on Offensive Quantum Computing. Available at [Amazon](https://www.amazon.com/Introduction-Adversarial-Quantum-Computing-Practice-ebook/dp/B09YMJXQTX/ref=sr_1_1?crid=3VZONRJBAP2G3&keywords=fernando+velazquez+quantum&qid=1654154138&sprefix=%2Caps%2C138&sr=8-1)!!  
-  
-
-- ⚡ I publish articles on technology topics at  [Meer](https://www.meer.com/en/authors/390-fernando-velazquez)  
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).

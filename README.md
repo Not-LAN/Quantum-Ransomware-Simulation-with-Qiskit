@@ -54,7 +54,7 @@ To run this project locally:
 ## 💬 Feedback
 
 If you have feedback or suggestions, contact:  
-📧 **jvelazqu@redhat.com**
+📧 **jvelazqu@notlan.mx**
 
 ---
 

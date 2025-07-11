@@ -61,3 +61,9 @@ If you have feedback or suggestions, contact:
 ## 📝 License
 
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+---
+
+🔒 Built by [NotLAN](https://notlan.mx) – Offensive Security as a Service.  
+We help organizations strengthen their defenses through continuous pentesting, AI remediation, and advanced adversarial simulations.
+
